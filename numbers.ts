@@ -130,7 +130,7 @@ export const extensiveNumber = (_value: string, _isCurrency?: boolean): string =
         : names.join('') ||
           ((!i && parseFloat(value[i + 1]) * 1 > 0) || extenciveNumber.length ? '' : list[0][0]);
 
-    // PARTE DO NÚMERO (PRINCIPAL E DECIMAL)
+    // NUMBER PART (MAIN AND DECIMAL)
     let numberPart: string = number;
     if (_isCurrency) {
       if (i) {
